@@ -1,0 +1,33 @@
+html, body{margin: 0; padding: 0; width: 100%; height: 100%; max-width: 100%; overflow: hidden; max-height: 100%; background-color: white; 
+		display: flex; flex-direction: column; font-family: calibri; position: relative; align-content:stretch;}
+			header{width: 100%; height: 30px; margin: 0; padding: 10px 0px; font-size: 20px; background-color: #002133;text-align: center; 
+					color: white; font-weight: bold; font-family: calibri; top: 0; left: 0;}
+			header span{display: none;}
+			aside{width: 240px; background-color: #002133; display: inline-block;}
+			article{flex: 1 0 auto; display: flex; flex-direction: column; height: auto; max-width: 100vw; margin: 0 auto;}
+			article section{flex: 1 0 auto;}
+			footer{padding: 12px 0px; padding-left: 10px; background-color: white; border-top: 1px #002133 solid; color: #002133; font-family: arial;
+					font-size: 16px; font-weight: bold; max-width: 100%;}
+			footer span{color: #66ccff; cursor: pointer; user-select: none;}
+			footer span:hover{text-decoration: underline;}
+			aside section{width: 100%; height: 30px; margin-top: 20px; display: flex; flex-direction: column;}
+			aside section a{width: 100%; padding: 12px 20px; text-decoration: none; color: #ccc; box-sizing: border-box;}
+			aside section a:hover{color: white; background-color: rgba( 0, 0, 0, 0.1);}
+			aside section .active{color: white; background-color: rgba( 0, 0, 0, 0.1); border-left: 2px solid #ff9900;}
+			div{width: 100%; display: flex; flex-direction: row; flex: 1 0 auto;}
+			.cmail{all: initial; color: white; font-weight: bolder; font-size: 24px; font-family: arial; margin-left: 80px; float: left;}
+			.cmail1{all: initial; display: none; text-align: center; color: white; font-weight: bolder; font-size: 24px; font-family: arial; margin-top: 10px;}
+			input[type=search]{float: right; margin-right: 10px; width: 80%; max-width: 300px; box-sizing: border-box; padding: 5px; outline: none;
+								border-radius: 5px; border: none; background-color: rgba(255, 255, 255, 0.3); color: white;}
+			input[type=search]::placeholder{color: #ccc;}
+
+			@media only screen and (max-width: 800px){
+				aside{margin-left: -100%; transition: 1s; width: 200px;}
+				article{margin: 0;}
+				.aside{margin-left: 0px; max-width: 200px;}
+				.article{flex: 1 0 auto; position: relative;}
+				.body{overflow: hidden;}
+				header span{display: inline-block; position: absolute; left: 14px; font-size: 22px; font-weight: bolder; top: 8px;}
+				.cmail{display: none;}
+				.cmail1{display: block;}
+			}
